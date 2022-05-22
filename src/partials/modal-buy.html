@@ -1,0 +1,90 @@
+<div class="modal-buy__backdrop backdrop visually-hidden modal-buy__offer modal-buy-menu__offer">
+  <div class="modal-buy">
+    <button class="modal-button__close modal-buy--close modal-buy-menu--close"
+    aria-label="button for close modal window">
+      <svg class="modal-button__icon">
+        <use href="./images/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <b class=" modal-buy__title contact-modal__title  section__title">Order</b>
+
+    <!-- добавить адапитв рисунка -->
+    <picture class="contact-modal__img">
+      <source
+        srcset="./images/Hero/hero-girl-desktop.png     1x, 
+                ./images/Hero/hero-girl-desktop@2x.png  2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/Hero/hero-girl-tablet.png      1x,
+                ./images/Hero/hero-girl-tablet@2x.png   2x"
+        media="(min-width: 768px)"
+      />
+
+      <img src="./images/Hero/hero-girl-tablet.png" alt="girl with icecream" />
+    </picture>
+
+    <div class="modal-buy__block">
+      <!-- ==========здесь должна быть форма заказа мороженного==== -->
+      <form class="modal-buy__form"
+      aria-label="form to ordered ice-cream">
+        <h2 class="section__label modal-buy__label ">Make an order</h2>
+        <div>
+          <label class="form-field">
+            <input
+              type="text"
+              class="form-input"
+              name="user-name"
+              autofocus
+              required
+              placeholder=" "
+            />
+            <span class="form-label">Name</span>
+            <!-- <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg> -->
+          </label>
+
+          <label class="form-field">
+            <input type="tel" class="form-input" name="tel" required placeholder=" " />
+            <span class="form-label">Phone</span>
+            <!-- <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg> -->
+          </label>
+
+          <label class="form-field">
+            <input type="email" class="form-input" name="email" required placeholder=" " />
+            <span class="form-label">E-mail</span>
+            <!-- <svg class="form-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg> -->
+          </label>
+        </div>
+
+        <!-- === -->
+        <div class="comment-section">
+          <label for="comment" class="comment-label">Comment</label>
+          <textarea
+            class="comment"
+            name="comment"
+            id="comment"
+            placeholder="Enter your text"
+          ></textarea>
+        </div>
+
+       
+        <button type="submit" class="button button--white modal-buy__button" 
+        aria-label="button to ordered ice-cream">Send</button>
+      </form>
+
+      <!-- ==========здесь должна закончиться форма заказа мороженного==== -->
+
+      <ul class="modal-buy__box modal-buy__box--bottom">
+        <li class="modal-buy__circle">IceCream</li>
+        <li class="modal-buy__circle">IceCream</li>
+        <li class="modal-buy__circle">IceCream</li>
+      </ul>
+    </div>
+  </div>
+</div>
