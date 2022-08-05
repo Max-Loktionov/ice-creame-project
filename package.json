@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": " Командный проект на курсе HTML/CSS группы №10",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "swiper": "^8.3.2"
+  },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-nuke-dist": "^1.0.1",

@@ -1,11 +1,15 @@
 const swiper = new Swiper('.swiper', {
-    pagination: {
-        el: '.swiper-pagination',
+  loop: true,
 
-        clickable: true,
-        
-        loop: true,
-    }
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
+  pagination: {
+    el: '.swiper-pagination',
 
+    clickable: true,
+  },
 });
